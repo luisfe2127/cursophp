@@ -10,9 +10,12 @@
 <body>
     <h1></h1>
 
-    <?php 
+    <?php
+    
+    date_default_timezone_set("America/Sao_Paulo");
 
-    echo "hj e dia";
+    echo "Hoje é dia ".date("d/m/y "); 
+    echo "Horário " . date("g:i:s T");
 
 ?>
 
