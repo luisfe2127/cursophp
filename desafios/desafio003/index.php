@@ -10,9 +10,9 @@
 <h1>Converta seu dinheiro real para dolar</h1>
 
 <?php 
-    $cotaçao = 5,87;
+    $cotaçao = 5.87;
 
-    $real = 1000;
+    $real = 1420;
 
     $dolar = $real / $cotaçao;
 
@@ -20,7 +20,7 @@
 
     $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
 
-    echo "R$". numfmt_fomart_currency($padrao, $real, "BRL") = US$ numfmt_fomart_currency($padrao, $dolar, "USD");
+    echo "Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a " . numfmt_format_currency($padrao, $dolar, "USD");
 
 ?>
     
