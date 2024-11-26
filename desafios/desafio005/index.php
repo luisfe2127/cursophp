@@ -28,7 +28,6 @@
     $fra = $n - $int;
 
     echo "A parte inteira do valor é " . number_format($int, 0, ",", ".") . " e a fracionaria é " . number_format($fra, 3, ",", ".");
-
     ?>
 </body>
 </html>
