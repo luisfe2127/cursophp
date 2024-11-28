@@ -27,7 +27,12 @@
     $divisao = $dividendo / $divisor;
 
     echo $dividendo . "|" . $divisor . "</br>";
-    echo $resto $divisao;
+    echo $resto . " " . number_format($divisao, 2, ",", "." ) . "</br> </br>";
+
+    echo "Dividendo: " . $dividendo . "</br>";
+    echo "Divisor: " . $divisor . "</br>";
+    echo "Resto: " . $resto . "</br>";
+    echo "Divisao: " . number_format($divisao, 2, ",", ".") . "</br>";
 ?>
     
 </body>
