@@ -18,7 +18,7 @@
 
         <section>
             <?php 
-            if (isset($_GET["gerar"])) {
+            if ($_GET["gerar"]) {
                 $x = rand(0, 100);
                 echo "<p>$x</p>";
             }
