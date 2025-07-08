@@ -10,7 +10,7 @@
 <section>
     <h1>Converta os segundos em minutos, horas, dias e semanas:</h1>
 
-    <form action="index.php" method="get">
+    <form action="<?=$_SERVER['PHP_SELF']?>" method="get">
         <input type="number" name="number" id="inumber">
         <input type="submit" value="Calcular">
     </form>
@@ -27,7 +27,7 @@
 
     $s = $n / 604800;
 
-    echo "O valor " . number_format($n, 0, ",", ".") . " se equivalem a " . number_format($m, 0, ",", ".") . " minutos, " . number_format($h, 0, ",", ".") . " horas, " . number_format($d, 0, ",", ".") . " dias e " . number_format($s, 0, ",", ".") . " semanas.";
+    echo "O valor " . number_format($n, 0, ",", ".") . " se equivalem a " . number_format($m, 2, ",", ".") . " minutos, " . number_format($h, 0, ",", ".") . " horas, " . number_format($d, 2, ",", ".") . " dias e " . number_format($s, 2, ",", ".") . " semanas.";
 ?>
     
 </body>
